@@ -64,6 +64,7 @@ def test_add_passenger():
     assert isinstance(test_flight.pass_list[0], Passenger), 'Passenger list does not consist of objects'
     assert new_passenger in test_flight.pass_list, 'Passenger not added to flight'
 
+
 def test_delete_passenger():
     new_passenger_1 = Passenger('Joana Thomson', 'B17432')
     new_passenger_2 = Passenger('Birt Kuman', 'B13927')
