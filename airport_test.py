@@ -20,9 +20,9 @@ def test_plane_creation():
     assert Plane('4269').number == '4269', 'Plane not created'
 
 def test_create_empty_flight():
-    assert Flight().plane == None, 'Empty flight plane no not none'
-    assert Flight().destination == None, 'Empty flight has destination'
-    assert Flight().origin == None, 'Empty flight has origin'
+    assert Flight().plane is None, 'Empty flight plane no not none'
+    assert Flight().destination is None, 'Empty flight has destination'
+    assert Flight().origin is None, 'Empty flight has origin'
     assert Flight().pass_list == [], 'Empty flight does not have empty list of passengers'
 
 def test_add_plane():
