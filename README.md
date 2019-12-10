@@ -38,4 +38,5 @@ This program consists of 4 files:
     - Add a destination to a flight
     - Add an origin to a flight
     - Add a passenger to the passenger list
-    - Have the passenger list as a list of objects.
+    - Have the passenger list as a list of objects
+    - Remove a passenger from the passenger list

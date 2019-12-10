@@ -19,3 +19,10 @@ class Flight:
 
     def add_passenger(self, passenger):
         self.pass_list.append(passenger)
+
+    def drop_passenger(self, passenger_name):
+        index = 0
+        for passenger in self.pass_list:
+            if passenger.name == passenger_name:
+                break
+        self.pass_list.pop(index)
