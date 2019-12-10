@@ -9,8 +9,8 @@ def test_name_number():
     new_passenger_2 = Passenger('Birt Kuman', 'B13927')
     assert new_passenger_1.name == 'Joana Thomson', 'Joanna Thomson was not created'
     assert new_passenger_2.name == 'Birt Kuman', 'Birt Kuman was not created'
-    assert Passenger('Joana Thomson', 'B343123').number == 'B343123', 'Passport number not created'
-    assert Passenger('Birt Kuman', 'B13927').number == 'B13927', 'Passport number not created'
+    assert new_passenger_1.number == 'B343123', 'Passport number not created'
+    assert new_passenger_2.number == 'B13927', 'Passport number not created'
 
 
 def test_missing_info():
