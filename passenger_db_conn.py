@@ -9,7 +9,7 @@ class PassengerDBConnection(MSSQLConnection):
         passport_number = input('Enter the passport number of the passenger')
         query = f"INSERT INTO Passengers (first_name, last_name, passport_no) VALUES ('{first_name}', " \
                 f"'{last_name}', '{passport_number}')"
-        # print(query)
+        #print(query)
         self.sql_query(query)
         self.docker_flights.commit()
         return 'Passenger added'
