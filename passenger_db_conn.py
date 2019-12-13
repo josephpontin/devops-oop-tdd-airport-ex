@@ -13,3 +13,16 @@ class PassengerDBConnection(MSSQLConnection):
         self.sql_query(query)
         self.docker_flights.commit()
         return 'Passenger added'
+
+    def list_all_passengers(self):
+        query = f"SELECT * FROM Passengers ORDER BY ID"
+        #print(query)
+        data = self.sql_query(query)
+        str_to_output = ''
+        while True:
+            record = data.fetchone()
+            if record is None:
+                break
+            str_to_output += f"ID: {record.ID}, Name: {record.first_name} {record.last_name}, " \
+                             f"Passport Number: {record.passport_no}\n"
+        return str_to_output

@@ -15,6 +15,7 @@ while True:
     print('Press 3 to add a passenger to a flight')
     print('Press 4 to create a flight')
     print('Press 5 for a list of passengers on a flight')
+    print('Press 6 for a list of all passengers in the system')
     user_input = input('....')
 
     if user_input == '1':
@@ -27,4 +28,6 @@ while True:
         print(flights_table.create_flight())
     elif user_input == '5':
         print(flights_table.get_pax())
+    elif user_input == '6':
+        print(passengers_table.list_all_passengers())
     input('Press ENTER to continue')
