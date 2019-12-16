@@ -1,4 +1,3 @@
-from pyodbc_connection import *
 from flights_db_conn import *
 from passenger_db_conn import *
 
